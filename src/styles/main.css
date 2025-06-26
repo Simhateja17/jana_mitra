@@ -1168,4 +1168,25 @@ body {
         left: 0;
         opacity: 0.2;
     }
+
+    /* Mobile adjustments for project filter buttons */
+    .projects-filter {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.75rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none; /* Firefox */
+    }
+    .projects-filter::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        border-radius: 30px;
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
 } 
