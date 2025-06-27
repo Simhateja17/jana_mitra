@@ -1,8 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
-require('dotenv').config();
 
 module.exports = {
   mode: 'development',
@@ -38,17 +36,10 @@ module.exports = {
         { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
       ],
     }),
-    new webpack.DefinePlugin({
-      'process.env.NEXT_PUBLIC_API_URL': JSON.stringify(process.env.NEXT_PUBLIC_API_URL),
-    }),
   ],
   devServer: {
     static: './dist',
-    port: (() => {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
-      const url = new URL(apiUrl);
-      return parseInt(url.port) || 3000;
-    })(),
+    port: process.env.PORT || 3000,
     open: true,
     hot: true,
   },
