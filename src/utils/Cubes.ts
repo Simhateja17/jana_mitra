@@ -67,7 +67,7 @@ export class Cubes {
             right: -10%;
             width: 70%;
             height: 100%;
-            opacity: 0.4;
+            opacity: 0.75;
         `;
 
         const scene = document.createElement('div');
