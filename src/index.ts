@@ -34,9 +34,9 @@ class App {
         document.body.insertBefore(header.getElement(), app);
         
         app.appendChild(hero.getElement());
+        app.appendChild(about.getElement());
         app.appendChild(projects.getElement());
         app.appendChild(reviews.getElement());
-        app.appendChild(about.getElement());
         app.appendChild(contact.getElement());
         
         document.body.appendChild(footer.getElement());

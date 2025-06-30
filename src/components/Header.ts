@@ -38,11 +38,22 @@ export class Header {
         const toggleBtn = this.element.querySelector('.mobile-menu-toggle');
         const navMenu = this.element.querySelector('.nav-menu');
         
-        toggleBtn?.addEventListener('click', () => {
-            this.mobileMenuOpen = !this.mobileMenuOpen;
-            navMenu?.classList.toggle('active');
-            toggleBtn.innerHTML = this.mobileMenuOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+        // Enhanced event listeners for reliable mobile menu functionality
+        if (toggleBtn) {
+            // Primary click event
+            toggleBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.toggleMobileMenu(toggleBtn, navMenu);
+            });
+
+            // Touch support for mobile devices
+            toggleBtn.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this.toggleMobileMenu(toggleBtn, navMenu);
+            });
+        }
 
         // Smooth scrolling for navigation links
         const navLinks = this.element.querySelectorAll('.nav-link');
@@ -75,6 +86,12 @@ export class Header {
                 link.classList.add('active');
             });
         });
+    }
+
+    private toggleMobileMenu(toggleBtn: Element, navMenu: Element | null): void {
+        this.mobileMenuOpen = !this.mobileMenuOpen;
+        navMenu?.classList.toggle('active');
+        toggleBtn.innerHTML = this.mobileMenuOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
     }
 
     private handleScroll(): void {

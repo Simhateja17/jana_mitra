@@ -50,7 +50,7 @@ body {
     width: 110%;
     left: -5%;
     top: 0;
-    z-index: 1000;
+    z-index: 999998;
     transition: var(--transition);
     border-radius: 1000px;
     padding: 0 5%;
@@ -85,7 +85,7 @@ body {
     align-items: center;
     padding: 1rem 0;
     position: relative;
-    z-index: 2;
+    z-index: 999997;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -94,22 +94,90 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    overflow: hidden;
+    margin-left: -7.5rem; /* Moves logo further to the left */
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+    transition: left 0.8s ease;
+}
+
+.logo:hover::before {
+    left: 100%;
 }
 
 .logo-image {
-    height: 50px;
+    height: 60px;
     width: auto;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5))
+            drop-shadow(0 0 20px rgba(59, 130, 246, 0.3));
+    position: relative;
+    z-index: 2;
 }
 
-.logo-image:hover {
-    transform: scale(1.05);
+.logo:hover {
+    transform: scale(1.1) translateY(-2px);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+    border-color: rgba(255, 215, 0, 0.6);
+    box-shadow: 
+        0 8px 25px rgba(255, 215, 0, 0.3),
+        0 0 30px rgba(255, 215, 0, 0.2),
+        0 0 40px rgba(59, 130, 246, 0.1);
+}
+
+.logo:hover .logo-image {
+    transform: rotate(5deg) scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8))
+            drop-shadow(0 0 30px rgba(59, 130, 246, 0.5))
+            drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Add pulsing animation to the logo */
+@keyframes logoPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 5px rgba(255, 215, 0, 0.3),
+            0 0 10px rgba(255, 215, 0, 0.2),
+            0 0 15px rgba(59, 130, 246, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 10px rgba(255, 215, 0, 0.6),
+            0 0 20px rgba(255, 215, 0, 0.4),
+            0 0 30px rgba(59, 130, 246, 0.3);
+    }
+}
+
+.logo {
+    animation: logoPulse 3s ease-in-out infinite;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
+}
+
+/* Desktop specific gap - will be overridden on mobile */
+@media (min-width: 769px) {
+    .nav-menu {
+        gap: 2rem;
+    }
 }
 
 .nav-link {
@@ -1081,27 +1149,109 @@ body {
         padding: 0 2.5%;
     }
 
+    /* Mobile logo positioning - different from desktop */
+    .logo {
+        margin-left: -1rem; /* Less aggressive positioning for mobile */
+        padding: 0.3rem; /* Smaller padding for mobile */
+    }
+
+    .logo-image {
+        height: 45px; /* Slightly smaller logo for mobile */
+    }
+
+    /* MOBILE MENU - Proper full-screen implementation */
     .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
-        width: 100%;
-        background: var(--bg-white);
+        width: 100vw;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        display: flex;
         flex-direction: column;
-        padding: 1rem;
-        box-shadow: var(--shadow);
-        border-top: 1px solid var(--border-color);
-        border-radius: 0 0 20px 20px;
-        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        z-index: 999999;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        list-style: none;
+        margin: 0;
+        gap: 0;
     }
 
     .nav-menu.active {
-        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu .nav-link {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border: 2px solid transparent;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+        background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+        border-color: #ffd700;
+        color: #ffd700;
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        box-shadow: 
+            0 8px 32px rgba(255, 215, 0, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-menu .nav-link:after {
+        display: none;
     }
 
     .mobile-menu-toggle {
-        display: block;
+        display: block !important;
+        color: var(--text-dark);
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 9999999 !important;
+        position: fixed !important;
+        top: 15px !important;
+        right: 20px !important;
+        padding: 12px !important;
+        pointer-events: auto !important;
+        touch-action: manipulation !important;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        width: 50px !important;
+        height: 50px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .mobile-menu-toggle:hover {
+        background: rgba(255, 215, 0, 0.1);
+        transform: scale(1.1);
     }
 
     .hero-title {
