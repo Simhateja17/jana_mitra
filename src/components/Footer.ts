@@ -19,10 +19,8 @@ export class Footer {
                             through innovative construction solutions.
                         </p>
                         <div class="social-links" style="margin-top: 1.5rem;">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Janamithra-Infra-Developers/100063784675490/?mibextid=qi2Omg&rdid=XZWfQtM54PaFM8RF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FnGCE9vhdn4KzusSb%2F%3Fmibextid%3Dqi2Omg" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/janamithra_infra_developers?igsh=MWg5eWNuZXRzanhwZw%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     

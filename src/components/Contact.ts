@@ -20,15 +20,22 @@ export class Contact {
                         <h3>Contact Information</h3>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>janamithraconstructions@gmail.com</span>
+                            <span>info.janamitra@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+91 9999999999</span>
+                            <span>+91 9848024768</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Chennai, Tamil Nadu, India</span>
+                            <span>Peddakopu Colony, Tirupati, Andhra Pradesh 517501</span>
+                        </div>
+                        <div class="social-links" style="margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem; color: var(--text-color);">Follow Us</h4>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="https://www.facebook.com/people/Janamithra-Infra-Developers/100063784675490/?mibextid=qi2Omg&rdid=XZWfQtM54PaFM8RF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FnGCE9vhdn4KzusSb%2F%3Fmibextid%3Dqi2Omg" target="_blank" aria-label="Facebook" style="color: var(--primary-color); font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/janamithra_infra_developers?igsh=MWg5eWNuZXRzanhwZw%3D%3D" target="_blank" aria-label="Instagram" style="color: var(--primary-color); font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                     
