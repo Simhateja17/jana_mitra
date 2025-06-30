@@ -44,8 +44,8 @@ export class ProjectModal {
         const modalBody = this.element.querySelector('.modal-body');
         if (modalBody) {
             modalBody.innerHTML = `
-                <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
-                <div style="padding: 2rem;">
+                <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px 10px 0 0;">
+                <div style="padding: 2rem; flex: 1;">
                     <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
                         <h2 style="font-size: 2rem; color: var(--primary-color); margin: 0;">${project.title}</h2>
                         <span class="project-status status-${project.status}" style="font-size: 1rem;">
@@ -61,7 +61,7 @@ export class ProjectModal {
                         ${project.description}
                     </p>
                     
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
                         ${project.completionDate ? `
                             <div>
                                 <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">
@@ -84,7 +84,7 @@ export class ProjectModal {
                         <h4 style="color: var(--primary-color); margin-bottom: 1rem;">
                             <i class="fas fa-star"></i> Key Features
                         </h4>
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem;">
                             ${project.features.map(feature => `
                                 <div style="display: flex; align-items: center; gap: 0.5rem;">
                                     <i class="fas fa-check-circle" style="color: var(--secondary-color);"></i>
@@ -97,13 +97,13 @@ export class ProjectModal {
             `;
         }
         
-        this.element.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+        this.element.style.display = 'flex';
+        // Ensure the modal can scroll from the top
+        this.element.scrollTop = 0;
     }
 
     public hide(): void {
         this.element.style.display = 'none';
-        document.body.style.overflow = 'auto';
     }
 
     public getElement(): HTMLElement {

@@ -1107,16 +1107,30 @@ body.mobile-menu-open .mobile-menu-toggle * {
     z-index: 1000;
     padding: 2rem;
     overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
     background: var(--bg-white);
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 10px;
     position: relative;
     animation: modalFadeIn 0.3s ease;
     border: 1px solid var(--border-color);
+    max-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .modal-close {
@@ -1169,12 +1183,12 @@ body.mobile-menu-open .mobile-menu-toggle * {
 
     /* Mobile logo positioning - different from desktop */
     .logo {
-        margin-left: -1rem; /* Less aggressive positioning for mobile */
-        padding: 0.3rem; /* Smaller padding for mobile */
+        margin-left: -1rem;
+        padding: 0.3rem;
     }
 
     .logo-image {
-        height: 45px; /* Slightly smaller logo for mobile */
+        height: 45px;
     }
 
     /* MOBILE MENU - Proper full-screen implementation */
@@ -1373,5 +1387,15 @@ body.mobile-menu-open .mobile-menu-toggle * {
         border-radius: 30px;
         white-space: nowrap;
         flex: 0 0 auto;
+    }
+
+    /* Mobile modal adjustments */
+    .modal {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        margin: 0;
+        max-height: calc(100vh - 2rem);
     }
 } 
