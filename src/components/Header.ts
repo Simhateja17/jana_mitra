@@ -19,9 +19,9 @@ export class Header {
                     </a>
                     <ul class="nav-menu">
                         <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#projects" class="nav-link">Projects</a></li>
                         <li><a href="#reviews" class="nav-link">Reviews</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                     <button class="mobile-menu-toggle">

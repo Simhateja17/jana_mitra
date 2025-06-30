@@ -25,9 +25,6 @@ export class Projects {
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="completed">Completed</button>
                     <button class="filter-btn" data-filter="ongoing">Ongoing</button>
-                    <button class="filter-btn" data-filter="residential">Residential</button>
-                    <button class="filter-btn" data-filter="commercial">Commercial</button>
-                    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
                 </div>
                 
                 <div class="projects-grid">
@@ -91,7 +88,6 @@ export class Projects {
         
         projectCards.forEach(card => {
             const status = card.getAttribute('data-status');
-            const category = card.getAttribute('data-category');
             
             let shouldShow = false;
             
@@ -102,11 +98,6 @@ export class Projects {
                 case 'completed':
                 case 'ongoing':
                     shouldShow = status === filter;
-                    break;
-                case 'residential':
-                case 'commercial':
-                case 'infrastructure':
-                    shouldShow = category === filter;
                     break;
             }
             
