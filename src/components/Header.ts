@@ -76,6 +76,8 @@ export class Header {
                 if (this.mobileMenuOpen) {
                     navMenu?.classList.remove('active');
                     this.mobileMenuOpen = false;
+                    document.body.style.overflow = '';
+                    document.body.classList.remove('mobile-menu-open');
                     if (toggleBtn) {
                         toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
                     }
@@ -86,12 +88,38 @@ export class Header {
                 link.classList.add('active');
             });
         });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (this.mobileMenuOpen && 
+                !navMenu?.contains(e.target as Node) && 
+                !toggleBtn?.contains(e.target as Node)) {
+                navMenu?.classList.remove('active');
+                this.mobileMenuOpen = false;
+                document.body.style.overflow = '';
+                document.body.classList.remove('mobile-menu-open');
+                if (toggleBtn) {
+                    toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            }
+        });
     }
 
     private toggleMobileMenu(toggleBtn: Element, navMenu: Element | null): void {
         this.mobileMenuOpen = !this.mobileMenuOpen;
         navMenu?.classList.toggle('active');
         toggleBtn.innerHTML = this.mobileMenuOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        
+        // Ensure the mobile menu is always on top and prevent body scroll
+        if (this.mobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('mobile-menu-open');
+            (navMenu as HTMLElement)?.style.setProperty('z-index', '999999999', 'important');
+            (toggleBtn as HTMLElement)?.style.setProperty('z-index', '9999999999', 'important');
+        } else {
+            document.body.style.overflow = '';
+            document.body.classList.remove('mobile-menu-open');
+        }
     }
 
     private handleScroll(): void {
