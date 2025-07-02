@@ -13,7 +13,7 @@ export class Footer {
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-section">
-                        <h4>About Jana Mithra</h4>
+                        <h4>About Janamithra</h4>
                         <p style="color: rgba(255, 255, 255, 0.8); margin-top: 1rem;">
                             Leading infrastructure company committed to building blocks and creating futures 
                             through innovative construction solutions.
@@ -48,7 +48,7 @@ export class Footer {
                 </div>
                 
                 <div class="footer-bottom">
-                    <p>&copy; ${new Date().getFullYear()} Jana Mithra Infrastructure. All rights reserved.</p>
+                    <p>&copy; ${new Date().getFullYear()} Janamithra Infrastructure. All rights reserved.</p>
                 </div>
             </div>
         `;

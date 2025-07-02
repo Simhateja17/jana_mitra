@@ -19,8 +19,8 @@ export class Hero {
                 <div class="hero-content">
                     <div class="hero-badge">Excellence in Infrastructure</div>
                     <h1 class="hero-title">
-                        <span class="hero-title-line"><span class="hero-highlight-blue">Building</span> Blocks,</span>
-                        <span class="hero-title-line">Creating <span class="hero-highlight">Futures</span></span>
+                        <span class="hero-title-line"><span class="hero-highlight-blue">Building</span> <span class="hero-highlight-white-gold">Blocks</span><span class="hero-comma">,</span></span>
+                        <span class="hero-title-line"><span class="hero-highlight-white-blue">Creating</span> <span class="hero-highlight">Futures</span></span>
                     </h1>
                     <p class="hero-subtitle">Leading infrastructure company delivering excellence in construction</p>
                     <div class="hero-cta-wrapper">
@@ -44,9 +44,9 @@ export class Hero {
             gridSize: 12,
             maxAngle: 30,
             radius: 3,
-            borderStyle: '1px solid rgba(255, 255, 255, 0.12)',
-            faceColor: 'rgba(15, 15, 15, 0.7)',
-            rippleColor: '#ffd700',
+            borderStyle: '1px solid rgba(59, 130, 246, 0.3)',
+            faceColor: 'rgba(255, 255, 255, 0.8)',
+            rippleColor: '#3b82f6',
             rippleSpeed: 1.8,
             autoAnimate: true,
             rippleOnClick: true,

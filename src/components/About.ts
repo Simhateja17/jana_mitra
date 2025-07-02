@@ -12,19 +12,17 @@ export class About {
         section.className = 'section';
         section.innerHTML = `
             <div class="container">
-                <h2 class="section-title">About <span class="gradient-text">Jana Mithra</span></h2>
-                <p class="section-subtitle">Building dreams with quality and trust</p>
+                <h2 class="section-title">About <span class="gradient-text">Janamithra </span></h2>
+                <p class="section-subtitle">Visionary Leadership & Sustainable Communities</p>
                 
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="assets/images/Founder_of_Jana_Mitra-removebg-preview.png" alt="Mr. N. Siva Reddy - Founder of Jana Mithra Construction" class="founder-image">
+                        <img src="assets/images/Founder_of_Jana_Mitra-removebg-preview.png" alt="Siva Reddy - Chairperson of Janamithra Infra Venture" class="founder-image">
                     </div>
                     <div class="about-text">
-                        <h3>Two Decades of Excellence</h3>
-                        <p>Founded by <strong>Mr. N. Siva Reddy</strong>, the Proprietor of Janamithra Infra Developers, Jana Mithra Construction has been at the forefront of the construction industry for over 20 years. Our journey began with a simple vision: to build structures that stand the test of time while exceeding our clients' expectations.</p>
-                        
-                        <p>From residential complexes to commercial spaces and infrastructure projects, we have successfully completed numerous projects across Tamil Nadu and beyond. Our commitment to quality, innovation, and customer satisfaction has made us a trusted name in the construction industry.</p>
-                        
+                        <h3>At the Helm: Siva Reddy</h3>
+                        <p>At the helm of Janamithra Infra Venture stands <strong>Siva Reddy</strong>, a visionary leader whose dedication and expertise have been the cornerstone of our success. As Chairperson, Siva Reddy brings over two decades of experience in the real estate industry, coupled with an unwavering commitment to excellence and integrity.</p>
+                        <p>Siva Reddy's vision for Janamithra Infra Venture transcends mere business objectives. He is a passionate advocate for sustainable development and believes in creating communities that harmonize with nature. This ethos is embedded in every project, as the company strives to contribute positively to the environment and the society at large. Siva Reddy's leadership ensures that Janamithra Infra Venture not only delivers exceptional real estate solutions but also fosters a sense of community and environmental stewardship.</p>
                         <div class="stats-grid">
                             <div class="stat-item">
                                 <h4 class="stat-number" data-target="30">0+</h4>
@@ -35,7 +33,7 @@ export class About {
                                 <p class="stat-label">Happy Clients</p>
                             </div>
                             <div class="stat-item">
-                                <h4 class="stat-number" data-target="15">0+</h4>
+                                <h4 class="stat-number" data-target="20">0+</h4>
                                 <p class="stat-label">Years Experience</p>
                             </div>
                         </div>

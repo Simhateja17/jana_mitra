@@ -15,7 +15,7 @@ export class Header {
             <div class="container">
                 <nav class="nav-container">
                     <a href="#home" class="logo">
-                        <img src="assets/images/logo.webp" alt="Jana Mithra" class="logo-image">
+                        <img src="assets/images/logo.webp" alt="Janamithra" class="logo-image">
                     </a>
                     <ul class="nav-menu">
                         <li><a href="#home" class="nav-link active">Home</a></li>

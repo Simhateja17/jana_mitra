@@ -1,13 +1,10 @@
 import { projects, Project } from '../data/projects';
-import { ProjectModal } from './ProjectModal';
 
 export class Projects {
     private element: HTMLElement;
     private currentFilter: string = 'all';
-    private modal: ProjectModal;
 
     constructor() {
-        this.modal = new ProjectModal();
         this.element = this.createElement();
         this.attachEventListeners();
     }
@@ -33,7 +30,6 @@ export class Projects {
             </div>
         `;
         
-        section.appendChild(this.modal.getElement());
         return section;
     }
 
@@ -48,6 +44,12 @@ export class Projects {
                         <i class="fas fa-map-marker-alt"></i>
                         ${project.location}
                     </p>
+                    <div class="project-actions">
+                        <button class="project-details-btn" data-project-id="${project.id}">
+                            <span>More Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         `).join('');
@@ -70,14 +72,14 @@ export class Projects {
             });
         });
 
-        // Project cards - click to open modal
+        // Project details button click
         this.element.addEventListener('click', (e) => {
-            const projectCard = (e.target as HTMLElement).closest('.project-card');
-            if (projectCard) {
-                const projectId = projectCard.getAttribute('data-project-id');
-                const project = projects.find(p => p.id === projectId);
-                if (project) {
-                    this.modal.show(project);
+            const detailsBtn = (e.target as HTMLElement).closest('.project-details-btn');
+            if (detailsBtn) {
+                const projectId = detailsBtn.getAttribute('data-project-id');
+                if (projectId) {
+                    // Navigate to project detail page
+                    this.navigateToProject(projectId);
                 }
             }
         });
@@ -115,6 +117,15 @@ export class Projects {
                 }, 300);
             }
         });
+    }
+
+    private navigateToProject(projectId: string): void {
+        // For now, we'll use hash-based routing for simplicity
+        // In a more complex app, you might use a proper router
+        window.location.hash = `#project/${projectId}`;
+        
+        // Alternative: Open in new tab with project details
+        // window.open(`project.html?id=${projectId}`, '_blank');
     }
 
     public getElement(): HTMLElement {

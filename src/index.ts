@@ -2,6 +2,7 @@ import './styles/main.css';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
+import { ProjectDetail } from './components/ProjectDetail';
 import { Reviews } from './components/Reviews';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -22,13 +23,14 @@ class App {
         const header = new Header();
         const hero = new Hero();
         const projects = new Projects();
+        const projectDetail = new ProjectDetail();
         const reviews = new Reviews();
         const about = new About();
         const contact = new Contact();
         const footer = new Footer();
 
         // Store components for cleanup if needed
-        this.components = [header, hero, projects, reviews, about, contact, footer];
+        this.components = [header, hero, projects, projectDetail, reviews, about, contact, footer];
 
         // Build the page
         document.body.insertBefore(header.getElement(), app);
@@ -36,6 +38,7 @@ class App {
         app.appendChild(hero.getElement());
         app.appendChild(about.getElement());
         app.appendChild(projects.getElement());
+        app.appendChild(projectDetail.getElement());
         app.appendChild(reviews.getElement());
         app.appendChild(contact.getElement());
         
