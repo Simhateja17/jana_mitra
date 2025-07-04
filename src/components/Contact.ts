@@ -20,7 +20,7 @@ export class Contact {
                         <h3>Contact Information</h3>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>info.janamitra@gmail.com</span>
+                            <span>siva.janamithra9@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
@@ -28,13 +28,14 @@ export class Contact {
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Peddakopu Colony, Tirupati, Andhra Pradesh 517501</span>
+                            <span>D NO. 13-6-600/44/81, P k Layout, Beside Partha Dental Hospital, TIRUPATI - 517501</span>
                         </div>
                         <div class="social-links" style="margin-top: 2rem;">
                             <h4 style="margin-bottom: 1rem; color: var(--text-color);">Follow Us</h4>
                             <div style="display: flex; gap: 1rem;">
                                 <a href="https://www.facebook.com/people/Janamithra-Infra-Developers/100063784675490/?mibextid=qi2Omg&rdid=XZWfQtM54PaFM8RF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FnGCE9vhdn4KzusSb%2F%3Fmibextid%3Dqi2Omg" target="_blank" aria-label="Facebook" style="color: var(--primary-color); font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.instagram.com/janamithra_infra_developers?igsh=MWg5eWNuZXRzanhwZw%3D%3D" target="_blank" aria-label="Instagram" style="color: var(--primary-color); font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@janamithrainfradevelopers9140" target="_blank" aria-label="YouTube" style="color: var(--primary-color); font-size: 1.5rem; transition: color 0.3s ease;"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

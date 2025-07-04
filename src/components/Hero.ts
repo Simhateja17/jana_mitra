@@ -6,7 +6,7 @@ export class Hero {
 
     constructor() {
         this.element = this.createElement();
-        this.addBackgroundPattern();
+        // this.addBackgroundPattern(); // Removed background blocks
     }
 
     private createElement(): HTMLElement {

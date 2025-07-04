@@ -28,6 +28,7 @@ export interface Project {
         landParcel?: string;
         floor?: string;
     };
+    mapEmbed?: string;
 }
 
 // Standard amenities for all projects
@@ -95,6 +96,7 @@ export const projects: Project[] = [
         size: '200 Plots',
         features: ['Gated Community', 'Modern Architecture', 'Landscaped Gardens', 'Security System'],
         amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3185.6108261327854!2d79.5943056!3d13.8292778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ5JzQ1LjQiTiA3OcKwMzUnMzkuNSJF!5e1!3m2!1sen!2sin!4v1751624435427!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         gallery: [
             'assets/images/sri-sai-krishna-nagar-gallery-1.webp',
             'assets/images/sri-sai-krishna-nagar-gallery-2.webp',
@@ -125,7 +127,8 @@ export const projects: Project[] = [
         completionDate: 'July 2023',
         size: '150 Plots',
         features: ['Gated Community', 'Wide Roads', 'Underground Drainage', 'Street Lighting', 'Security System'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0126221174232!2d79.5353851!3d13.6199532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d48de12ace90b%3A0x9dbc767c9d259783!2sPapanaidupet%20Rd%2C%20Gudimallam%2C%20Andhra%20Pradesh%20517526!5e1!3m2!1sen!2sin!4v1751624529538!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     },
     {
         id: '4',
@@ -152,6 +155,7 @@ export const projects: Project[] = [
         size: '180 Plots',
         features: ['Highway Connectivity', 'Modern Design', 'Gated Community', 'Premium Amenities'],
         amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.587883944773!2d79.5870755!3d13.884489199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d2508384b3185%3A0xe34c33199f62a9ba!2sSSR%20highway%20gardens!5e1!3m2!1sen!2sin!4v1751624173951!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         plotDetails: [
             { plotNo: '1', facing: 'EAST', size: '49.5X50.4', sqfeet: 2494.8, sqyard: 277.2, ankanams: 69.3 },
             { plotNo: '2', facing: 'EAST', size: '30X50', sqfeet: 1500, sqyard: 166.66, ankanams: 41.66 },
@@ -263,6 +267,7 @@ export const projects: Project[] = [
         size: '600 Units',
         features: ['River View', 'Children\'s Play Area', 'Community Center', 'Sports Complex'],
         amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.472023163967!2d79.5872995!3d13.832027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d3af5edc7763d%3A0xf3b7d4102815493e!2sJanamithra%20Sree%20Sai%20Brundavanam!5e1!3m2!1sen!2sin!4v1751624198107!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         gallery: [
             'assets/images/sri-sai-brindavanam-gallery-1.webp',
             'assets/images/sri-sai-brindavanam-gallery-2.webp',
@@ -293,7 +298,8 @@ export const projects: Project[] = [
         completionDate: 'September 2022',
         size: '120 Plots',
         features: ['Traditional Design', 'Gated Community', 'Landscaped Entrance', 'Street Lighting', 'Security Gates'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15671.593296685214!2d79.54086989999999!3d13.626849949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d489457060eb5%3A0x5a1dac9d6f83c59!2sAnagunta%2C%20Andhra%20Pradesh!5e1!3m2!1sen!2sin!4v1751624475065!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     },
     {
         id: '8',
@@ -332,7 +338,8 @@ export const projects: Project[] = [
         completionDate: 'August 2023',
         size: '250 Plots',
         features: ['Extensive Landscaping', 'Green Gardens', 'Eco-Friendly Design', 'Tree-Lined Roads', 'Sustainable Living'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d979.0191867986016!2d79.5988333!3d13.736305600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ0JzEwLjciTiA3OcKwMzUnNTUuOCJF!5e1!3m2!1sen!2sin!4v1751624229693!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     },
     {
         id: '11',
@@ -345,6 +352,7 @@ export const projects: Project[] = [
         completionDate: 'Expected: September 2024',
         size: '150 Units',
         features: ['Elegant Architecture', 'Premium Enclave', 'Security System', 'Landscaped Gardens', 'Community Center'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.4584586969845!2d79.594572!3d13.771336999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ2JzE2LjgiTiA3OcKwMzUnNDAuNSJF!5e1!3m2!1sen!2sin!4v1751624091982!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     }
 ]; 

@@ -197,6 +197,15 @@ export class ProjectDetail {
                             </div>
                         ` : ''}
                         
+                        ${this.project.mapEmbed ? `
+                            <div class="project-detail-map">
+                                <h4><i class="fas fa-map"></i> Location Map</h4>
+                                <div class="map-container">
+                                    ${this.project.mapEmbed}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
                         ${this.project.plotDetails ? `
                             <div class="project-detail-plot-details">
                                 <h4><i class="fas fa-table"></i> Plot Details</h4>
