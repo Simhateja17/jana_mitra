@@ -25,11 +25,11 @@ export class About {
                         <p>Siva Reddy's vision for Janamithra Infra Venture transcends mere business objectives. He is a passionate advocate for sustainable development and believes in creating communities that harmonize with nature. This ethos is embedded in every project, as the company strives to contribute positively to the environment and the society at large. Siva Reddy's leadership ensures that Janamithra Infra Venture not only delivers exceptional real estate solutions but also fosters a sense of community and environmental stewardship.</p>
                         <div class="stats-grid">
                             <div class="stat-item">
-                                <h4 class="stat-number" data-target="30">0+</h4>
+                                <h4 class="stat-number" data-target="20">0+</h4>
                                 <p class="stat-label">Projects Completed</p>
                             </div>
                             <div class="stat-item">
-                                <h4 class="stat-number" data-target="1250">0+</h4>
+                                <h4 class="stat-number" data-target="1500">0+</h4>
                                 <p class="stat-label">Happy Clients</p>
                             </div>
                             <div class="stat-item">

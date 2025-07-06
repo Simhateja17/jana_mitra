@@ -95,7 +95,7 @@ export const projects: Project[] = [
         title: 'Sri Sai Krishna Nagar',
         description: 'Premium residential layout with modern amenities and elegant design.',
         location: 'Tirupati, Andhra Pradesh',
-        status: 'ongoing',
+        status: 'completed',
         category: 'residential',
         image: 'assets/images/ongoing-project-1.png',
         completionDate: 'Expected: December 2024',
