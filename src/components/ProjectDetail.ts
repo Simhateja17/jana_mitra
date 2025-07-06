@@ -140,6 +140,15 @@ export class ProjectDetail {
                             </div>
                         ` : ''}
                         
+                        ${this.project.mapEmbed ? `
+                            <div class="project-detail-map">
+                                <h4><i class="fas fa-map"></i> Location Map</h4>
+                                <div class="map-container">
+                                    ${this.project.mapEmbed}
+                                </div>
+                            </div>
+                        ` : ''}
+
                         ${this.project.amenities ? `
                             <div class="project-detail-amenities">
                                 <h4><i class="fas fa-home"></i> Amenities of ${this.project.title}</h4>
@@ -193,15 +202,6 @@ export class ProjectDetail {
                                             <span>${highlight}</span>
                                         </div>
                                     `).join('')}
-                                </div>
-                            </div>
-                        ` : ''}
-                        
-                        ${this.project.mapEmbed ? `
-                            <div class="project-detail-map">
-                                <h4><i class="fas fa-map"></i> Location Map</h4>
-                                <div class="map-container">
-                                    ${this.project.mapEmbed}
                                 </div>
                             </div>
                         ` : ''}

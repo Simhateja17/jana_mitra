@@ -6,6 +6,12 @@ export interface Project {
     status: 'completed' | 'ongoing';
     category: 'residential' | 'commercial' | 'infrastructure';
     image: string;
+    imagePosition?: {
+        top?: number;
+        bottom?: number;
+        left?: number;
+        right?: number;
+    };
     completionDate?: string;
     size?: string;
     features: string[];
@@ -141,7 +147,8 @@ export const projects: Project[] = [
         completionDate: 'January 2023',
         size: '180 Plots',
         features: ['Palm Tree Avenues', 'Green Building Design', 'Rainwater Harvesting', 'Landscaped Entrance', 'Eco-Friendly Layout'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.68455299434!2d79.588453!3d13.819386999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ5JzA5LjgiTiA3OcKwMzUnMTguNCJF!5e1!3m2!1sen!2sin!4v1751776362855!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     },
     {
         id: '5',
@@ -287,7 +294,7 @@ export const projects: Project[] = [
             'Tirupati City (20 min. drive)'
         ]
     },
-        {
+    {
         id: '7',
         title: 'Sri Venkatachalapathi Nagar',
         description: 'Well-planned residential layout with traditional architecture and modern amenities.',
@@ -325,7 +332,8 @@ export const projects: Project[] = [
         completionDate: 'May 2023',
         size: '300 Units',
         features: ['Integrated Township', 'Modern Design', 'Premium Amenities', 'Landscaped Gardens', 'Community Center'],
-        amenities: standardAmenities
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3916.293452544922!2d79.595057!3d13.723328999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQzJzI0LjAiTiA3OcKwMzUnNDIuMiJF!5e1!3m2!1sen!2sin!4v1751776275346!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     },
     {
         id: '10',
@@ -354,5 +362,33 @@ export const projects: Project[] = [
         features: ['Elegant Architecture', 'Premium Enclave', 'Security System', 'Landscaped Gardens', 'Community Center'],
         amenities: standardAmenities,
         mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.4584586969845!2d79.594572!3d13.771336999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ2JzE2LjgiTiA3OcKwMzUnNDAuNSJF!5e1!3m2!1sen!2sin!4v1751624091982!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    },
+    {
+        id: '12',
+        title: 'Janamitra Highway Gardens',
+        description: 'More details about this project will be available soon. Please contact us for more information.',
+        location: 'Tirupati, Andhra Pradesh',
+        status: 'ongoing',
+        category: 'residential',
+        image: 'assets/images/Janamitra Highway Gardnes.webp',
+        features: ['Prime Location', 'Modern Amenities', 'Excellent Connectivity'],
+        amenities: standardAmenities,
+        mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.68455299434!2d79.588453!3d13.819386999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ5JzA5LjgiTiA3OcKwMzUnMTguNCJF!5e1!3m2!1sen!2sin!4v1751776362855!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+        locationHighlights: [
+            'Beside Tirupati-Sri Kalahasti 6 Lane Highway',
+            '5 km from International Airport, TCL, Dixon, Karbonn, Celkon, foxlink Etc.,',
+            '5 Min Drive to Tirupati, IIT, IISER Universities',
+            'Nearby Sri Engineering College',
+            '5 Min Drive to Deccan University Medical College',
+            '5 Min drive to Renigunta Highway Junction',
+            '15 min drive to Tirupati City'
+        ],
+        gallery: [
+            'assets/images/Gallery of Janamitra Highway Gardens.webp',
+            'assets/images/Gallery 2 of JANAMITRA HIGHWAY GARDENS.webp',
+            'assets/images/GALLERY 3 OF JANAMITRA HIGHWAY GARDENS.webp',
+            'assets/images/Gallery 4 of Janamitra Highway Gardens.webp'
+        ],
+        sitePlan: 'assets/images/Screenshot 2025-07-06 101345.webp'
     }
 ]; 
