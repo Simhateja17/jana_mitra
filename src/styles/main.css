@@ -239,12 +239,11 @@ body.mobile-menu-open .mobile-menu-toggle * {
 }
 
 .mobile-menu-toggle {
-    display: none;
+    display: none !important;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none;
 }
 
 /* Hero Section */
@@ -1995,7 +1994,7 @@ body.project-detail-view {
     }
 
     .mobile-menu-toggle {
-        display: block !important;
+        display: none !important;
         color: var(--text-dark);
         background: rgba(255, 255, 255, 0.9) !important;
         border: 2px solid rgba(59, 130, 246, 0.3) !important;
@@ -2012,7 +2011,6 @@ body.project-detail-view {
         transition: all 0.3s ease;
         width: 50px !important;
         height: 50px !important;
-        display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         backdrop-filter: blur(20px) !important;
