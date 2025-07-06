@@ -46,7 +46,7 @@ export class About {
 
     private animateStats(): void {
         const observerOptions = {
-            threshold: 0.5,
+            threshold: 0.1,
             rootMargin: '0px'
         };
 
