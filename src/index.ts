@@ -73,7 +73,7 @@ class App {
         }, observerOptions);
 
         // Observe all sections and cards
-        const elements = document.querySelectorAll('.section, .project-card, .review-card, .stat-item');
+        const elements = document.querySelectorAll('.section, .review-card, .stat-item');
         elements.forEach(element => {
             observer.observe(element);
         });
