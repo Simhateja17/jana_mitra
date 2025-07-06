@@ -729,6 +729,8 @@ body.mobile-menu-open .mobile-menu-toggle * {
     display: flex;
     flex-direction: column;
     height: 100%;
+    opacity: 1;
+    transform: translateY(0);
     /* Add custom properties for image positioning with default values */
     --img-top: 50%;
     --img-left: 50%;
