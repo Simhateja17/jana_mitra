@@ -72,8 +72,8 @@ class App {
             });
         }, observerOptions);
 
-        // Observe all sections and cards
-        const elements = document.querySelectorAll('.section, .review-card, .stat-item');
+        // Observe all sections and cards except projects section
+        const elements = document.querySelectorAll('.section:not(#projects), .review-card, .stat-item');
         elements.forEach(element => {
             observer.observe(element);
         });
@@ -106,6 +106,13 @@ style.textContent = `
     .section.animate {
         opacity: 1;
         transform: translateY(0);
+    }
+    
+    /* Remove animations for projects section */
+    .section#projects {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition: none !important;
     }
     
     .project-card {
