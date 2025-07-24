@@ -28,10 +28,7 @@ export class Highlights {
             { icon: '📈', title: 'GROWTH ORIENTED', description: 'Focused on continuous improvement' },
             { icon: '🤝', title: 'TRANSPARENCY', description: 'Clear and honest communications' },
             { icon: '💰', title: 'VALUE FOR MONEY', description: 'Competitive and fair pricing' },
-            { icon: '📋', title: 'CLEAR DOCUMENTATION', description: 'Thorough and precise paperwork' },
-            { icon: '🎯', title: 'MISSION', description: 'Deliver quality plots, ensuring transparency, integrity, and customer satisfaction.' },
-            { icon: '👁️', title: 'VISION', description: 'To be the leading real estate company known for ethical practices.' },
-            { icon: '💎', title: 'VALUES', description: 'Integrity, customer focus, quality, innovation, transparency, sustainability, excellence, teamwork, accountability.' }
+            { icon: '📋', title: 'CLEAR DOCUMENTATION', description: 'Thorough and precise paperwork' }
         ];
 
         highlights.forEach(highlight => {
