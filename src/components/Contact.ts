@@ -24,7 +24,7 @@ export class Contact {
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+91 9848024768</span>
+                            <span>+91 9742980083</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>

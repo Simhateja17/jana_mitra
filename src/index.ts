@@ -5,6 +5,7 @@ import { Projects } from './components/Projects';
 import { ProjectDetail } from './components/ProjectDetail';
 import { Reviews } from './components/Reviews';
 import { Highlights } from './components/Highlights';
+import { MissionVisionValues } from './components/MissionVisionValues';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -27,12 +28,13 @@ class App {
         const projectDetail = new ProjectDetail();
         const reviews = new Reviews();
         const highlights = new Highlights();
+        const mvv = new MissionVisionValues();
         const about = new About();
         const contact = new Contact();
         const footer = new Footer();
 
         // Store components for cleanup if needed
-        this.components = [header, hero, projects, projectDetail, reviews, highlights, about, contact, footer];
+        this.components = [header, hero, projects, projectDetail, reviews, highlights, mvv, about, contact, footer];
 
         // Build the page
         document.body.insertBefore(header.getElement(), app);
@@ -43,6 +45,7 @@ class App {
         app.appendChild(projectDetail.getElement());
         app.appendChild(reviews.getElement());
         app.appendChild(highlights.getElement());
+        app.appendChild(mvv.getElement());
         app.appendChild(contact.getElement());
         
         document.body.appendChild(footer.getElement());

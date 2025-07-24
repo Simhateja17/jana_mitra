@@ -14,6 +14,11 @@ export class Footer {
                 <div class="footer-content">
                     <div class="footer-section">
                         <h4>About Janamithra</h4>
+                        <div class="footer-logo-quote" style="margin: 1rem 0;">
+                            <p style="color: rgba(255, 255, 255, 0.9); font-style: italic; font-size: 1.1rem; margin-bottom: 1rem; text-align: center; border-left: 3px solid var(--secondary-color); padding-left: 1rem;">
+                                "Discover Your Future: Janamithra Infra - Where Dreams Find Land."
+                            </p>
+                        </div>
                         <p style="color: rgba(255, 255, 255, 0.8); margin-top: 1rem;">
                             Leading infrastructure company committed to building blocks and creating futures 
                             through innovative construction solutions.
