@@ -15,7 +15,7 @@ export class Footer {
                     <div class="footer-section">
                         <h4>About Janamithra</h4>
                         <div class="footer-logo-quote" style="margin: 1rem 0;">
-                            <p style="color: rgba(255, 255, 255, 0.9); font-style: italic; font-size: 1.1rem; margin-bottom: 1rem; text-align: center; border-left: 3px solid var(--secondary-color); padding-left: 1rem;">
+                            <p style="color: var(--gold-primary); font-style: italic; font-size: 1.1rem; margin-bottom: 1rem; text-align: center; border-left: 3px solid var(--gold-primary); padding-left: 1rem; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);">
                                 "Discover Your Future: Janamithra Infra - Where Dreams Find Land."
                             </p>
                         </div>
