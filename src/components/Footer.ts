@@ -19,7 +19,7 @@ export class Footer {
                                 "Discover Your Future: Janamithra Infra - Where Dreams Find Land."
                             </p>
                         </div>
-                        <p style="color: rgba(255, 255, 255, 0.8); margin-top: 1rem;">
+                        <p style="color: black; margin-top: 1rem;">
                             Leading infrastructure company committed to building blocks and creating futures 
                             through innovative construction solutions.
                         </p>
