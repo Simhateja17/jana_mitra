@@ -72,7 +72,7 @@ export class About {
         const increment = target / (duration / 16);
         let current = start;
 
-        const updateNumber = () => {
+        const updateNumber = () => { //hi
             current += increment;
             if (current < target) {
                 element.textContent = Math.floor(current).toString();
