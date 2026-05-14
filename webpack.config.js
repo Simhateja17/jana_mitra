@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
+        { from: 'public', to: '.', noErrorOnMissing: true },
       ],
     }),
   ],

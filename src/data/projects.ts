@@ -55,17 +55,17 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/sree-venkata-sai-nagar.png',
+        image: '/images/sree-venkata-sai-nagar.png',
         completionDate: 'March 2023',
         size: '200 Plots',
         features: ['Tennis Courts', '24/7 Security', 'Children\'s Play Area', 'Landscaped Gardens', 'Club House'],
         amenities: standardAmenities,
         gallery: [
-            'assets/images/sri-venkata-sai-nagar-gallery-1.webp',
-            'assets/images/sri-venkata-sai-nagar-gallery-2.webp',
-            'assets/images/sri-venkata-sai-nagar-gallery-3.webp'
+            '/images/sri-venkata-sai-nagar-gallery-1.webp',
+            '/images/sri-venkata-sai-nagar-gallery-2.webp',
+            '/images/sri-venkata-sai-nagar-gallery-3.webp'
         ],
-        sitePlan: 'assets/images/sri-venkata-sai-nagar-site-plan.webp',
+        sitePlan: '/images/sri-venkata-sai-nagar-site-plan.webp',
         locationHighlights: [
             'Beside NIMZ (National Investment Manufacture Zone)',
             'Adidas Shoe Company',
@@ -98,18 +98,18 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/ongoing-project-1.png',
+        image: '/images/ongoing-project-1.png',
         completionDate: 'Expected: December 2024',
         size: '200 Plots',
         features: ['Gated Community', 'Modern Architecture', 'Landscaped Gardens', 'Security System'],
         amenities: standardAmenities,
         mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3185.6108261327854!2d79.5943056!3d13.8292778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ5JzQ1LjQiTiA3OcKwMzUnMzkuNSJF!5e1!3m2!1sen!2sin!4v1751624435427!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         gallery: [
-            'assets/images/sri-sai-krishna-nagar-gallery-1.webp',
-            'assets/images/sri-sai-krishna-nagar-gallery-2.webp',
-            'assets/images/sri-sai-krishna-nagar-gallery-3.webp'
+            '/images/sri-sai-krishna-nagar-gallery-1.webp',
+            '/images/sri-sai-krishna-nagar-gallery-2.webp',
+            '/images/sri-sai-krishna-nagar-gallery-3.webp'
         ],
-        sitePlan: 'assets/images/sri-sai-krishna-nagar-site-plan.webp',
+        sitePlan: '/images/sri-sai-krishna-nagar-site-plan.webp',
         locationHighlights: [
             'Adidas Shoe Company',
             'NBPPL, Mannavaram (NTPC, BHEL Power Projects Ltd.)',
@@ -130,7 +130,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/sree-sai-ram-nagar.png',
+        image: '/images/sree-sai-ram-nagar.png',
         completionDate: 'July 2023',
         size: '150 Plots',
         features: ['Gated Community', 'Wide Roads', 'Underground Drainage', 'Street Lighting', 'Security System'],
@@ -144,7 +144,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/sreesai-green-gardens.png',
+        image: '/images/sreesai-green-gardens.png',
         completionDate: 'January 2023',
         size: '180 Plots',
         features: ['Palm Tree Avenues', 'Green Building Design', 'Rainwater Harvesting', 'Landscaped Entrance', 'Eco-Friendly Layout'],
@@ -158,7 +158,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'ongoing',
         category: 'residential',
-        image: 'assets/images/ongoing-project-2.png',
+        image: '/images/ongoing-project-2.png',
         completionDate: 'Expected: June 2025',
         size: '180 Plots',
         features: ['Highway Connectivity', 'Modern Design', 'Gated Community', 'Premium Amenities'],
@@ -270,18 +270,18 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'ongoing',
         category: 'residential',
-        image: 'assets/images/ongoing-project-3.png',
+        image: '/images/ongoing-project-3.png',
         completionDate: 'Expected: March 2024',
         size: '600 Units',
         features: ['River View', 'Children\'s Play Area', 'Community Center', 'Sports Complex'],
         amenities: standardAmenities,
         mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.472023163967!2d79.5872995!3d13.832027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d3af5edc7763d%3A0xf3b7d4102815493e!2sJanamithra%20Sree%20Sai%20Brundavanam!5e1!3m2!1sen!2sin!4v1751624198107!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
         gallery: [
-            'assets/images/sri-sai-brindavanam-gallery-1.webp',
-            'assets/images/sri-sai-brindavanam-gallery-2.webp',
-            'assets/images/sri-sai-brindavanam-gallery-3.webp'
+            '/images/sri-sai-brindavanam-gallery-1.webp',
+            '/images/sri-sai-brindavanam-gallery-2.webp',
+            '/images/sri-sai-brindavanam-gallery-3.webp'
         ],
-        sitePlan: 'assets/images/sri-sai-brindavanam-site-plan.webp',
+        sitePlan: '/images/sri-sai-brindavanam-site-plan.webp',
         locationHighlights: [
             'Proposed IT Hub (TITAN)',
             'Indian Institute of Technology (IIT)',
@@ -302,7 +302,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/sri-venkata-chalapathi-nagar.png',
+        image: '/images/sri-venkata-chalapathi-nagar.png',
         completionDate: 'September 2022',
         size: '120 Plots',
         features: ['Traditional Design', 'Gated Community', 'Landscaped Entrance', 'Street Lighting', 'Security Gates'],
@@ -316,7 +316,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/royal-nagar.png',
+        image: '/images/royal-nagar.png',
         completionDate: 'November 2022',
         size: '100 Plots',
         features: ['Modern Architecture', 'Premium Location', 'Wide Roads', 'Landscaping', 'Elite Community'],
@@ -329,7 +329,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/janamitra-township.png',
+        image: '/images/janamitra-township.png',
         completionDate: 'May 2023',
         size: '300 Units',
         features: ['Integrated Township', 'Modern Design', 'Premium Amenities', 'Landscaped Gardens', 'Community Center'],
@@ -343,7 +343,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'completed',
         category: 'residential',
-        image: 'assets/images/janamitra-green-gardens.png',
+        image: '/images/janamitra-green-gardens.png',
         completionDate: 'August 2023',
         size: '250 Plots',
         features: ['Extensive Landscaping', 'Green Gardens', 'Eco-Friendly Design', 'Tree-Lined Roads', 'Sustainable Living'],
@@ -357,7 +357,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'ongoing',
         category: 'residential',
-        image: 'assets/images/ongoing-project-4.png',
+        image: '/images/ongoing-project-4.png',
         completionDate: 'Expected: September 2024',
         size: '150 Units',
         features: ['Elegant Architecture', 'Premium Enclave', 'Security System', 'Landscaped Gardens', 'Community Center'],
@@ -371,7 +371,7 @@ export const projects: Project[] = [
         location: 'Tirupati, Andhra Pradesh',
         status: 'ongoing',
         category: 'residential',
-        image: 'assets/images/Janamitra Highway Gardnes.webp',
+        image: '/images/Janamitra Highway Gardnes.webp',
         features: ['Prime Location', 'Modern Amenities', 'Excellent Connectivity'],
         amenities: standardAmenities,
         mapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3914.68455299434!2d79.588453!3d13.819386999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQ5JzA5LjgiTiA3OcKwMzUnMTguNCJF!5e1!3m2!1sen!2sin!4v1751776362855!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
@@ -385,11 +385,11 @@ export const projects: Project[] = [
             '15 min drive to Tirupati City'
         ],
         gallery: [
-            'assets/images/Gallery of Janamitra Highway Gardens.webp',
-            'assets/images/Gallery 2 of JANAMITRA HIGHWAY GARDENS.webp',
-            'assets/images/GALLERY 3 OF JANAMITRA HIGHWAY GARDENS.webp',
-            'assets/images/Gallery 4 of Janamitra Highway Gardens.webp'
+            '/images/Gallery of Janamitra Highway Gardens.webp',
+            '/images/Gallery 2 of JANAMITRA HIGHWAY GARDENS.webp',
+            '/images/GALLERY 3 OF JANAMITRA HIGHWAY GARDENS.webp',
+            '/images/Gallery 4 of Janamitra Highway Gardens.webp'
         ],
-        sitePlan: 'assets/images/Screenshot 2025-07-06 101345.webp'
+        sitePlan: '/images/Screenshot 2025-07-06 101345.webp'
     }
 ]; 

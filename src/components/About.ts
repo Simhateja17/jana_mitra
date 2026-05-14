@@ -17,7 +17,7 @@ export class About {
                 
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="assets/images/Founder_of_Jana_Mitra-removebg-preview.png" alt="Siva Reddy - Chairperson of Janamithra Infra Venture" class="founder-image">
+                        <img src="/images/Founder_of_Jana_Mitra-removebg-preview.png" alt="Siva Reddy - Chairperson of Janamithra Infra Venture" class="founder-image">
                     </div>
                     <div class="about-text">
                         <h3>At the Helm: Siva Reddy</h3>
